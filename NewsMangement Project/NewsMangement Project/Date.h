@@ -1,13 +1,13 @@
 #pragma once
 enum Month
 {
-	January, February, ....
+	//January, February, ...
 };
-class Date
+class Date //Sara
 {
 	int day;
 	Month month;
-	year;
+	int year;
 public:
 	Date(int day, Month month, int year);
 	bool isBefore();

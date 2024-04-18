@@ -1,8 +1,7 @@
 #include "User.h"
 User::User()
 {
-	name = NULL;
-	password = NULL;
+	name = password = "";
 }
 User::User(string na, string pass)
 {

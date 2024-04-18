@@ -35,3 +35,8 @@ void  RegisteredUser::spam()
 {
 
 }
+
+void RegisteredUser::BookMark(string Title, unordered_map<string, News> DataHolder)
+{
+
+}

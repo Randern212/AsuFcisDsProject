@@ -2,10 +2,10 @@
 #include "User.h"
 class Admin : public User
 {
-	void Post();
-	void Remove();
-	void Update();
-	void AddCategory();
-	float DisplayAverageRate();
+	void Post();//Salsabil
+	void Remove();//Mahmoud
+	void Update();//Roaa
+	void AddCategory();//Salsabil
+	float DisplayAverageRate();//Rokaya
 };
 

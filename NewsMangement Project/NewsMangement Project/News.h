@@ -2,13 +2,14 @@
 #include <iostream>
 #include <vector>
 #include <unordered_map>
-class News
+#include "Date.h"
+class News //Eiad
 {
 	std::string Title;
 	std::string Category;
 	std::string Article;
 	std::vector<std::string> keyWords;
-	//date Date;
+	Date date;
 	std::unordered_map<std::string,float> ratings;
 public:
 	News(std::string directory);

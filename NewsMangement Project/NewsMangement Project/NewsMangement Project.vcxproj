@@ -128,14 +128,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Admin.h" />
+    <ClInclude Include="Date.h" />
+    <ClInclude Include="DatedBST.h" />
     <ClInclude Include="News.h" />
+    <ClInclude Include="ratedBST.h" />
     <ClInclude Include="RegisteredUser.h" />
     <ClInclude Include="User.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Admin.cpp" />
+    <ClCompile Include="Date.cpp" />
+    <ClCompile Include="DatedBST.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="News.cpp" />
+    <ClCompile Include="ratedBST.cpp" />
     <ClCompile Include="RegisteredUser.cpp" />
     <ClCompile Include="User.cpp" />
   </ItemGroup>
