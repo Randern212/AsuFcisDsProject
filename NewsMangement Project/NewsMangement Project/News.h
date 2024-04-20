@@ -5,15 +5,23 @@
 #include "Date.h"
 class News //Eiad
 {
-	std::string Title;
-	std::string Category;
-	std::string Article;
+	std::string title;
+	std::string category;
+	std::string description;
 	std::vector<std::string> keyWords;
-	Date date;
-	std::unordered_map<std::string,float> ratings;
+	std::unordered_map<std::string, float> ratings;
+
 public:
+	Date date;
 	News(std::string directory);
+	std::string GetTitle();
+	void SetTitle(std::string s);
+	std::string GetCategory();
+	void SetCategory(std::string s);
+	std::string GetDescription();
+	void SetDescription(std::string s);
 	void Rate(std::string userName, float rate);
-	float specifiedRate(std::string userName);
+	float SpecifiedRate(std::string userName);
+	void Display();
 
 };

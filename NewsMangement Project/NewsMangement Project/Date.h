@@ -1,7 +1,9 @@
 #pragma once
+#include<string>
+#include<iostream>
 enum Month
 {
-	//January, February, ...
+	Jan, Feb, Mar, Apr, May, Jun, July, Jul, Aug, Sep, Oct, Nov, Dec
 };
 class Date //Sara
 {
@@ -10,5 +12,12 @@ class Date //Sara
 	int year;
 public:
 	Date(int day, Month month, int year);
-	bool isBefore();
+	int GetDay();
+	void SetDay(int d);
+	Month GetMonth();
+	void SetMonth(int m);
+	int GetYear();
+	int SetYear(int s);
+	void Rate(std::string userName, float rate);
+	bool IsBefore();
 };

@@ -9,8 +9,6 @@ using namespace std;
 
 int main()
 {
-	set<News> allNews;
-	unordered_map < string, set<News> > categorized;
 	unordered_map<string, unordered_map<string, RegisteredUser>> userList;
 	User* currentUser;
 

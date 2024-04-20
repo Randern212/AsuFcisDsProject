@@ -19,10 +19,6 @@ void  RegisteredUser::RateNews()
 {
 
 }
-void  RegisteredUser::Bookmark()
-{
-
-}
 void  RegisteredUser::DisplayTrendingNews()
 {
 
