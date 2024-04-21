@@ -1,17 +1,18 @@
 #pragma once
 #include "User.h"
+#include"Admin.h"
+#include"BookMark.h"
 class RegisteredUser :public User
 {
-	vector<News> Bookmarked;
 public:
+	BookMark bookMark; //Roaa 
 	void Register();
 	void Search();
 	void DisplayLatestNews();
 	void DisplayCategorizedNews();//Rawan
 	void RateNews();//Mahmoud
 	void DisplayTrendingNews();//Rawan
-	void Comment();//Roaa
+	void AddComment(string comment,News news);//Roaa
 	void spam();//Rawan
-	void BookMark(string Title, unordered_map<string, News> DataHolder);//Roaa
 };
 

@@ -23,8 +23,11 @@ void  RegisteredUser::DisplayTrendingNews()
 {
 
 }
-void  RegisteredUser::Comment()
+void  RegisteredUser::AddComment(string comment,News news)
 {
+
+	news.Comment.push({ name, comment });
+
 
 }
 void  RegisteredUser::spam()
@@ -32,7 +35,4 @@ void  RegisteredUser::spam()
 
 }
 
-void RegisteredUser::BookMark(string Title, unordered_map<string, News> DataHolder)
-{
 
-}

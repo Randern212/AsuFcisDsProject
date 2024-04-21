@@ -3,6 +3,7 @@
 #include <vector>
 #include <unordered_map>
 #include "Date.h"
+#include<stack>
 class News //Eiad
 {
 	std::string title;
@@ -13,6 +14,7 @@ class News //Eiad
 
 public:
 	Date date;
+	std::stack < std::pair<std::string , std::string >> Comment;//Roaa
 	News(std::string directory);
 	std::string GetTitle();
 	void SetTitle(std::string s);
@@ -22,6 +24,7 @@ public:
 	void SetDescription(std::string s);
 	void Rate(std::string userName, float rate);
 	float SpecifiedRate(std::string userName);
-	void Display();
+	void DisplayNews();//Roaa
+	void DisplayComment();//Roaa
 
 };

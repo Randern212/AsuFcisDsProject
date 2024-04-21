@@ -16,7 +16,7 @@ void Admin::Update()
 	for (auto& it : news)
 	{
 		cout << i << "- ";
-		it.Display();
+		it.DisplayNews();
 		cout << "\n";
 		i++;
 	}

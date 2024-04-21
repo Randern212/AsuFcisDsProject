@@ -38,10 +38,25 @@ float News::SpecifiedRate(std::string userName)
 {
 	return ratings[userName];
 }
-void  News::Display()
+void  News::DisplayNews()
 {
 	std::cout << "Category: " << category << "\n";
 	std::cout << "Title: " << title << "\n";
 	std::cout << "Description: " << description << "\n";
 	std::cout << "Date: " << date.GetDay() << "/ " << date.GetMonth() << "/ " << date.GetYear() << "\n";
+}
+void  News::DisplayComment()
+{
+	if (Comment.empty())
+		std::cout << "there is no comments for this news ";
+	else
+	{
+		while (!Comment.empty())
+		{
+			std::cout << "[" << Comment.top().first << "] " << Comment.top().second << "\n";
+			Comment.pop();
+		}
+
+	}
+	
 }

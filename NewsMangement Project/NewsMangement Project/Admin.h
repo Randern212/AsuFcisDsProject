@@ -6,9 +6,10 @@
 #include"Date.h"
 class Admin : public User
 {
-	set<News> allNews;
-	vector<News> news;
-	unordered_map < string, set<News> > categorized;
+public:
+	static set<News> allNews;
+	static vector<News> news;
+	static unordered_map < string, set<News> > categorized;
 	void Post();//Salsabil
 	void Remove();//Mahmoud
 	void Update();//Roaa
