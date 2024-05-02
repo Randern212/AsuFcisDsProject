@@ -11,6 +11,5 @@ protected:
 public:
 	User();
 	User(string na, string pass);
-	static bool  Login(string name, string pass);
+	User* Login(string name, string pass);
 };
-
