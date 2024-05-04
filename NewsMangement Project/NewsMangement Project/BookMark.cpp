@@ -1,9 +1,8 @@
 #include "BookMark.h"
-void BookMark::AddBookMark
-(std::string title, News booked)
+void BookMark::AddBookMark(int id, News booked)
 {
-	bookMarked[title] = booked;
-	std::cout << title << "Added to bookmarks ";
+	bookMarked[id] = booked;
+	std::cout << "Added to bookmarks successfully ";
 
 }
 void BookMark::DisplayAllBookMarked()
@@ -15,22 +14,22 @@ void BookMark::DisplayAllBookMarked()
 	{
 		for (auto& book : bookMarked)
 		{
-			std::cout << book.first;
+			std::cout << book.second.GetId() << "-" << book.second.GetTitle();
 
 		}
 	}
 }
-News BookMark::GetSpecificBookMarke(std::string title)
+News BookMark::GetSpecificBookMarke(int id)
 {
-	return bookMarked[title];
+	return bookMarked[id];
 }
-void BookMark::RemoveBookMarke(std::string title)
+void BookMark::RemoveBookMarke(int id)
 {
-	if (bookMarked.find(title) != bookMarked.end())
+	if (bookMarked.find(id) != bookMarked.end())
 	{
-		bookMarked.erase(title);
-		std::cout << title << " Removed from BookMarks successfully";
+		bookMarked.erase(id);
+		std::cout << " Removed from BookMarks successfully";
 	}
 	else
-		std::cout << title <<" Not found";
+		std::cout << " Not found";
 }

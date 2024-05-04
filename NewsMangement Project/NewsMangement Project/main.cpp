@@ -33,6 +33,7 @@ int main()
 		std::cout << "username: \t";
 		std::getline(std::cin, name);
 		std::cout << "password: \t";
+		std::getline(std::cin, password);
 		accounts.insert(std::make_pair(password, RegisteredUser(name, password)));
 	}
 }

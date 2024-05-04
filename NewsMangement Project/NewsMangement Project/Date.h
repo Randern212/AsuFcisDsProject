@@ -14,10 +14,10 @@ public:
 	Date(int day, Month month, int year);
 	int GetDay();
 	void SetDay(int d);
+	bool LeapYear(int year);
 	Month GetMonth();
 	void SetMonth(int m);
 	int GetYear();
-	int SetYear(int s);
-	void Rate(std::string userName, float rate);
-	bool IsBefore();
+	void SetYear(int y);
+	bool IsBefore(Date& ODate);
 };

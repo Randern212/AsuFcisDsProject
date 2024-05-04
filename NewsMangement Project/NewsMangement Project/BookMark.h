@@ -4,11 +4,10 @@
 #include<unordered_map>
 class BookMark//Roaa
 {
-	std::unordered_map<std::string, News> bookMarked;
+	std::unordered_map<int, News> bookMarked;
 public:
-	void AddBookMark(std::string title, News booked);
+	void AddBookMark(int id, News booked);
 	void DisplayAllBookMarked();
-	void RemoveBookMarke(std::string title);
-	News GetSpecificBookMarke(std::string title);
+	void RemoveBookMarke(int id);
+	News GetSpecificBookMarke(int id);
 };
-

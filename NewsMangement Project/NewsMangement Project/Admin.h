@@ -8,11 +8,10 @@ class Admin : public User
 {
 public:
 	static set<News> allNews;
-	static vector<News> news;
 	static unordered_map < string, set<News> > categorized;
 	void Post();//Salsabil
 	void Remove();//Mahmoud
-	void Update();//Roaa
+	void Update(News n);//Roaa
 	void AddCategory();//Salsabil
 	float DisplayAverageRate();//Rokaya
 };
