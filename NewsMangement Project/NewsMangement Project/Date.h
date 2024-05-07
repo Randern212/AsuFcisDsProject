@@ -11,6 +11,7 @@ class Date //Sara
 	Month month;
 	int year;
 public:
+	Date();
 	Date(int day, Month month, int year);
 	int GetDay();
 	void SetDay(int d);
