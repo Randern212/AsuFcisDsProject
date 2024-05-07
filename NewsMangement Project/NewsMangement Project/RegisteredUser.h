@@ -5,8 +5,8 @@
 class RegisteredUser :public User
 {
 public:
+	RegisteredUser(std::string name, std::string password);
 	BookMark bookMark; //Roaa 
-	void Register();
 	void Search();
 	void DisplayLatestNews();
 	void DisplayCategorizedNews(string cate, News n);//Rawan
@@ -14,5 +14,6 @@ public:
 	void DisplayTrendingNews();//Rawan
 	void AddComment(string comment,News news);//Roaa
 	void spam();//Rawan
+	RegisteredUser* Login(string name, string pass);
 };
 
