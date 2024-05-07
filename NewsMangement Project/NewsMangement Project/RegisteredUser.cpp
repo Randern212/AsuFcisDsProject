@@ -1,8 +1,10 @@
 #include "RegisteredUser.h"
-void RegisteredUser::Register()
+RegisteredUser::RegisteredUser(std::string name, std::string password)
 {
-
+	this->name = name;
+	this->password = password;
 }
+
 void  RegisteredUser::Search()
 {
 
@@ -23,7 +25,7 @@ void  RegisteredUser::DisplayCategorizedNews(string cate, News n)
 	}
 	else
 	{
-		cout << "Sorry , the category you have entered is not found";
+		cout << "Sorry , the category you have entered is notÂ found";
 	}
 }
 void  RegisteredUser::RateNews(News newsobject, float rating)
@@ -47,6 +49,16 @@ void  RegisteredUser::AddComment(string comment,News news)
 void  RegisteredUser::spam()
 {
 
+}
+
+RegisteredUser* RegisteredUser::Login(string name, string pass)
+{
+	if (this->name == name && pass == password)
+	{
+		return this;
+	}
+	else
+		return NULL;
 }
 
 
