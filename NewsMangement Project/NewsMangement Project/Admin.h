@@ -7,12 +7,9 @@
 class Admin : public User
 {
 public:
-	static set<News> allNews;
-	static unordered_map < string, set<News> > categorized;
 	void Post();//Salsabil
-	void Remove();//Mahmoud
+	void Remove(vector <News> Newsvector); //Mahmoud
 	void Update(News n);//Roaa
 	void AddCategory();//Salsabil
-	float DisplayAverageRate();//Rokaya
 };
 
