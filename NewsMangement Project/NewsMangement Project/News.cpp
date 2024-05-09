@@ -1,9 +1,5 @@
 #include "News.h"
-News::News(std::string directory)
-{
-
-}
-
+News::News(){}
 std::string News::GetTitle()
 {
 	return title;
@@ -75,5 +71,15 @@ void  News::DisplayComment()
 
 	}
 
+}
+
+float News::calculate_avgrate()
+{
+	int sum_of_rates = 0;
+	for (auto it = ratings.begin(); it != ratings.end(); it++) {
+		sum_of_rates += it->second;
+	}
+	int avgrate = sum_of_rates / ratings.size();
+	return avgrate;
 }
 
