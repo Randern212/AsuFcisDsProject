@@ -14,10 +14,10 @@ class News //Eiad
 	std::unordered_map<std::string, float> ratings;
 
 public:
+	News();
 	std::vector<std::string>ReportingUsers;//Rawan 
 	Date date;
 	std::vector < std::pair<std::string , std::string >> Comment;//Roaa
-	News(std::string directory);
 	std::string GetTitle();
 	void SetTitle(std::string s);
 	int GetId();
@@ -30,5 +30,5 @@ public:
 	float SpecifiedRate(std::string userName);
 	void DisplayNews(std::string username);//Roaa & Rawan
 	void DisplayComment();//Roaa
-
+	float calculate_avgrate();
 };
